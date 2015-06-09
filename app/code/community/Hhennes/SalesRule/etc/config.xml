@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hhennes_SalesRule>
+            <version>0.1.0</version>    
+        </Hhennes_SalesRule>
+    </modules>
+    <global>
+        <models>
+            <salesrule>
+                <rewrite>
+                    <rule_condition_address>Hhennes_SalesRule_Model_Rule_Condition_Address</rule_condition_address>
+                </rewrite>
+            </salesrule>
+        </models>  
+        <helpers>
+            <hhennes_salesrule>
+                <class>Hhennes_SalesRule_Helper</class>
+            </hhennes_salesrule>
+        </helpers>
+    </global> 
+    <adminhtml>
+        <translate>
+            <modules>
+                <Hhennes_SalesRule>
+                    <files>
+                        <default>Hhennes_SalesRule.csv</default>
+                    </files>
+                </Hhennes_SalesRule>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>
